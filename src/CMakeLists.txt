@@ -54,8 +54,6 @@ if (NOT TRACY_HU_RESULT EQUAL 0)
     )
 endif()
 
-# Tell clang to load this BMI for header-unit imports of Tracy.hpp.
-# `-fmodule-file=[<name>=]<file>` — with name omitted it just loads the file.
 target_compile_options(scint PRIVATE
         $<$<COMPILE_LANGUAGE:CXX>:-fmodule-file=${TRACY_PCM}>
 )

@@ -20,6 +20,11 @@ include(cmake/get_cpm.cmake)
 
 option(BUILD_SANDBOX "Build sandbox executable" ON)
 option(BUILD_TESTS "Build tests" ON)
+option(ENABLE_COMPILE_TIME_TRACE  "Enable clang -ftime-trace for compile-time profiling" ON)
+
+if (ENABLE_COMPILE_TIME_TRACE AND CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    add_compile_options(-ftime-trace)
+endif()
 
 add_subdirectory(src)
 
