@@ -17,6 +17,7 @@ set(CMAKE_EXPERIMENTAL_CXX_MODULE_DYNDEP 1)
 
 
 include(cmake/get_cpm.cmake)
+include(cmake/tracy.cmake)
 
 option(BUILD_SANDBOX "Build sandbox executable" ON)
 option(BUILD_TESTS "Build tests" ON)

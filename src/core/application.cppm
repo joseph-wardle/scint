@@ -12,7 +12,10 @@ struct Application {
         i32 frame_number = 0;
         while (true) {
             ZoneScoped;
-            std::println("Frame number: {}", frame_number++);
+            if (frame_number % 60 == 0) {
+                std::println("Running frame {}", frame_number);
+            }
+            frame_number++;
         }
     }
 };
