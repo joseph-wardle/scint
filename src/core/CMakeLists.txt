@@ -1,5 +1,6 @@
 set(SCINT_CORE_MODULES
     application.cppm
+    option.cppm
     types.cppm
 )
 
