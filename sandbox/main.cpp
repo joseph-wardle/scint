@@ -1,7 +1,7 @@
 import std;
 
-import core.types;
-import core.application;
+import scint.core.types;
+import scint.core.application;
 using namespace scint;
 
 i32 main() {

@@ -1,4 +1,4 @@
-export module core.types;
+export module scint.core.types;
 
 export namespace scint {
 

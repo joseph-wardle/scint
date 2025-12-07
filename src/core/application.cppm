@@ -1,9 +1,9 @@
-export module core.application;
+export module scint.core.application;
 
 import <tracy/Tracy.hpp>;
 
 import std;
-import core.types;
+import scint.core.types;
 
 export namespace scint {
 
