@@ -1,9 +1,11 @@
 import std;
 
 import core.types;
+import core.application;
 using namespace scint;
 
 i32 main() {
-    std::println("Hello World!");
+    Application app{};
+    app.run();
     return 0;
 }

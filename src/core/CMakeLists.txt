@@ -1,5 +1,6 @@
 set(SCINT_CORE_MODULES
-        types.cppm
+    application.cppm
+    types.cppm
 )
 
 target_sources(scint
