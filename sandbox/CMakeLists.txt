@@ -1,0 +1,2 @@
+add_executable(scint_sandbox main.cpp)
+target_link_libraries(scint_sandbox PRIVATE scint)
