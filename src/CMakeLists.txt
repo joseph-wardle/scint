@@ -11,4 +11,8 @@ target_compile_options(scint PRIVATE
 
 scint_enable_tracy(scint)
 
+target_link_libraries(scint PRIVATE
+    vulkan_cppm
+)
+
 add_subdirectory(core)
